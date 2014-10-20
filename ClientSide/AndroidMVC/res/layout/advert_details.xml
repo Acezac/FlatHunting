@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"
+    >
+    
+<ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+    
+    
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <ImageView 
+        android:id="@+id/image_house"
+        android:layout_width="fill_parent"
+        android:layout_height="270dip"
+        android:src="@drawable/ic_launcher"
+        android:paddingBottom="15dip"
+        />
+ 	
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" loading " 
+        android:paddingBottom="15dip"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+    
+ 	<LinearLayout android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="2dip"
+     	android:layout_margin="5dip">
+     
+    	<TextView
+        	android:id="@+id/price_txt"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="Price" 
+        	android:paddingTop="10dip"
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/price_num"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="price" 
+        	android:paddingTop="10dip"
+        	android:layout_weight="1"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+     </LinearLayout>
+    
+     <LinearLayout android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+       
+    	<TextView
+        	android:id="@+id/location_txt"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="Location" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/location"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="location" 
+     	   	android:layout_weight="1"
+     	   	android:paddingTop="10dip"
+    	    android:gravity="right"
+    	    android:background="#ffffff"
+    	    android:textColor="#000000"
+    	    android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 
+    <LinearLayout  
+   		android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+    
+    
+    	<TextView
+        	android:id="@+id/datePosted_txt"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="Date posted" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+    	    android:id="@+id/datePosted"
+   	   		android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="Date Posted" 
+        	android:layout_weight="1"
+        	android:paddingTop="10dip"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 
+    <LinearLayout  
+        android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+    	
+     	<TextView
+        	android:id="@+id/Details"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Details" 
+        	android:paddingBottom="8dip"
+        	android:textSize="20sp"
+        	android:textColor="#00ff00"
+        	android:paddingTop="10dip"
+        	android:gravity="left"
+        	android:background="#ffffff"/>
+     
+     </LinearLayout> 
+ 
+     <LinearLayout  
+         android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="2dip"
+     	android:layout_margin="5dip">
+       
+    	<TextView      
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="No. Rooms" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/roomType"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="Number of Rooms" 
+        	android:layout_weight="1"
+        	android:paddingTop="10dip"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 
+    <LinearLayout  
+        android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="2dip"
+     	android:layout_margin="5dip">
+
+    	<TextView     
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="Seller Type" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/sellerType"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="Seller type" 
+        	android:layout_weight="1"
+        	android:paddingTop="10dip"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 	
+    <LinearLayout  
+        android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+
+    	<TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="Couples" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/couples"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="couples" 
+        	android:layout_weight="1"
+        	android:paddingTop="10dip"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 	
+   	<LinearLayout  
+   	    android:orientation="horizontal" 
+    	 android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+     
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:paddingTop="10dip"
+        	android:text="Date available" 
+        	android:layout_weight="1"
+        	android:gravity="left"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+ 
+    	<TextView
+        	android:id="@+id/dateAvailable"
+        	android:layout_width="wrap_content"
+        	android:layout_height="30dip"
+        	android:text="date available" 
+        	android:layout_weight="1"
+        	android:paddingTop="10dip"
+        	android:gravity="right"
+        	android:background="#ffffff"
+        	android:textColor="#000000"
+        	android:textSize="15sp"/>
+    
+ 	</LinearLayout>
+ 
+    <LinearLayout  
+        android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="1dip"
+     	android:layout_margin="5dip">
+    	
+     	<TextView       
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Description" 
+        	android:paddingBottom="8dip"
+        	android:textSize="20sp"
+        	android:textColor="#00ff00"
+        	android:paddingTop="10dip"
+        	android:gravity="left"
+       		android:background="#ffffff"/>
+     
+	</LinearLayout>
+     
+	<LinearLayout  
+	    android:orientation="horizontal" 
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:background="#d4d4d4"
+     	android:paddingTop="2dip"
+     	android:layout_margin="5dip">
+     	
+     	<TextView
+        	android:id="@+id/description"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Description" 
+        	android:paddingBottom="8dip"
+        	android:textSize="15sp"
+        	android:textColor="#000000"
+        	android:paddingTop="10dip"
+        	android:gravity="left"
+        	android:background="#ffffff"/>
+     
+	</LinearLayout>
+     
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

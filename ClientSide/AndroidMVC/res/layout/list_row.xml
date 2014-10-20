@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<LinearLayout
+  android:id="@+id/item"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/list_item_selector"
+  android:padding="2dip"
+  >
+ 
+              		
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:background="#ffffff" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="80dip"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="100dip"
+            android:layout_height="match_parent"/>
+ 
+    </LinearLayout>
+ 
+   
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:typeface="sans"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+ 
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="80dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="11dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+ 
+	<TextView 
+	    android:id="@+id/flat_id"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textSize="0sp"
+  		android:textColor="@android:color/transparent" />
+     
+      <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#343434"
+        android:gravity="bottom"/>
+ 
+</RelativeLayout>
+   
+  <!-- Child linear layout with horizontal orientation -->
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingTop="1dip"		
+      android:background="#d3d3d3">
+                 
+  	<TextView  
+  	    android:id="@+id/area"
+      	android:layout_width="fill_parent" 
+      	android:layout_height="wrap_content"
+        android:padding="15dip" 
+        android:layout_weight="1"
+        android:gravity="left"
+        android:background="#ffffff"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/marked"
+     	android:layout_width="48dip"
+     	android:layout_height="match_parent"
+     	android:src="@drawable/unmarked"
+    	android:layout_gravity="right"/>
+   
+  </LinearLayout>
+</LinearLayout>
